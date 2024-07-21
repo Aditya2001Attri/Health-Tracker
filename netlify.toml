@@ -1,5 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "build"
 
-
-[[edge_functions]]
-function = "customEdgeFunction"
-path = "/test"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
